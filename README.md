@@ -1,2 +1,2 @@
 # AWS
-AWS Cloud Formations Scripts
+AWS Scripts

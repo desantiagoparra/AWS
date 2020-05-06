@@ -1,7 +1,13 @@
-Type: AWS::EC2::VPC
-Properties:
-  CidrBlock: 192.168.0.0
-  EnableDnsHostnames: 1
-  EnableDnsSupport: 1
-  Tags:
-    - Scope: KubernetesCluster
+Resources:
+  myVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 172.0.0.0/16
+      EnableDnsSupport: 'false'
+      EnableDnsHostnames: 'false'
+      InstanceTenancy: default
+      Tags:
+      - Key: Name
+        Value: VPC-Kubernetes
+      - Key: Environment
+        Value: Development

@@ -5,4 +5,4 @@ Properties:
   EnableDnsSupport: Boolean
   IntanceTenancy: String
   Tags:
-    - Tag1
+    - Scope: KubernetesCluster

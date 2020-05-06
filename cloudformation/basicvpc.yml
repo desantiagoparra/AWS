@@ -1,0 +1,8 @@
+Type: AWS::EC2::VPC
+Properties:
+  CidrBlock: String
+  EnableDnsHostnames: Bolean
+  EnableDnsSupport: Boolean
+  IntanceTenancy: String
+  Tags:
+    - Tag1

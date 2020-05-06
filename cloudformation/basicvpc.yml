@@ -1,8 +1,7 @@
 Type: AWS::EC2::VPC
 Properties:
-  CidrBlock: String
-  EnableDnsHostnames: Bolean
-  EnableDnsSupport: Boolean
-  IntanceTenancy: String
+  CidrBlock: 192.168.0.0
+  EnableDnsHostnames: 1
+  EnableDnsSupport: 1
   Tags:
     - Scope: KubernetesCluster
